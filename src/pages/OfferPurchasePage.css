@@ -1,0 +1,256 @@
+.offerPurchase {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 18px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.offerPurchase__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.46);
+}
+
+.offerPurchase__card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1100px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 28px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28);
+  padding: 34px 30px 30px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.offerPurchase__topActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.offerPurchase__topBtn {
+  min-width: 220px;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111827;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.offerPurchase__header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.offerPurchase__title {
+  margin: 0 0 10px;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.offerPurchase__subtitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.offerPurchase__timerBox,
+.offerPurchase__detailsCard,
+.offerPurchase__noteBox,
+.offerPurchase__messageBox,
+.offerPurchase__successBox {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 26px;
+}
+
+.offerPurchase__timerBox {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.offerPurchase__timerLabel {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.offerPurchase__timerValue {
+  font-size: 54px;
+  font-weight: 900;
+  color: #d9ffe0;
+}
+
+.offerPurchase__timerValue--expired {
+  color: #ffd7d7;
+}
+
+.offerPurchase__detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.offerPurchase__sectionTitle {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.offerPurchase__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 1.7;
+}
+
+.offerPurchase__label {
+  font-weight: 900;
+}
+
+.offerPurchase__value {
+  font-weight: 700;
+}
+
+.offerPurchase__noteBox {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.offerPurchase__noteTitle {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.offerPurchase__noteText {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.offerPurchase__messageBox,
+.offerPurchase__successBox {
+  margin-top: 22px;
+  text-align: center;
+}
+
+.offerPurchase__messageBox--error {
+  background: rgba(180, 34, 34, 0.22);
+  border: 1px solid rgba(255, 180, 180, 0.28);
+}
+
+.offerPurchase__message,
+.offerPurchase__successBox {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.8;
+}
+
+.offerPurchase__successBox {
+  color: #d9ffe0;
+}
+
+.offerPurchase__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.offerPurchase__confirmBtn,
+.offerPurchase__cancelBtn {
+  min-width: 320px;
+  border: none;
+  border-radius: 16px;
+  padding: 18px 28px;
+  background: #2c73ff;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.offerPurchase__cancelBtn {
+  background: #dc2626;
+}
+
+.offerPurchase__confirmBtn:disabled,
+.offerPurchase__cancelBtn:disabled {
+  background: #8ca4d6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .offerPurchase__detailsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .offerPurchase__card {
+    padding: 24px 16px 22px;
+  }
+
+  .offerPurchase__topActions {
+    flex-direction: column;
+  }
+
+  .offerPurchase__topBtn,
+  .offerPurchase__confirmBtn,
+.offerPurchase__cancelBtn {
+    width: 100%;
+  }
+
+  .offerPurchase__title {
+    font-size: 34px;
+  }
+
+  .offerPurchase__subtitle,
+  .offerPurchase__timerLabel,
+  .offerPurchase__row,
+  .offerPurchase__noteText,
+  .offerPurchase__message,
+  .offerPurchase__successBox {
+    font-size: 18px;
+  }
+
+  .offerPurchase__timerValue {
+    font-size: 38px;
+  }
+
+  .offerPurchase__sectionTitle,
+  .offerPurchase__noteTitle {
+    font-size: 24px;
+  }
+
+  .offerPurchase__confirmBtn,
+.offerPurchase__cancelBtn {
+    font-size: 22px;
+  }
+}

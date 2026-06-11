@@ -1,0 +1,711 @@
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.personalArea {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.personalArea__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top right, rgba(63, 94, 251, 0.22), transparent 30%),
+    radial-gradient(circle at top left, rgba(252, 70, 107, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(5, 12, 33, 0.82), rgba(6, 14, 32, 0.93));
+}
+
+.personalArea__container {
+  position: relative;
+  z-index: 2;
+  max-width: 1550px;
+  margin: 0 auto;
+  padding: 24px 22px 40px;
+  box-sizing: border-box;
+}
+
+.personalArea__topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.personalArea__brand {
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: 900;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  user-select: none;
+}
+
+.personalArea__topActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.personalArea__topBtn,
+.personalArea__guestBtn,
+.personalArea__eventBtn {
+  height: 60px;
+  padding: 0 26px;
+  border-radius: 18px;
+  font-size: 21px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.personalArea__topBtn,
+.personalArea__guestBtn,
+.personalArea__eventBtn {
+  border: none;
+  background: linear-gradient(135deg, #3a7bff, #6c4dff);
+  color: #ffffff;
+  box-shadow: 0 10px 22px rgba(58, 123, 255, 0.28);
+}
+
+.personalArea__topBtn--ghost,
+.personalArea__guestBtn--ghost {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.09);
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.personalArea__topBtn--home {
+  border: none;
+  background: linear-gradient(135deg, #3a7bff, #6c4dff);
+  color: #ffffff;
+}
+
+.personalArea__topBtn:hover,
+.personalArea__guestBtn:hover,
+.personalArea__eventBtn:hover,
+.personalArea__linkBtn:hover,
+.personalArea__brand:hover {
+  opacity: 0.96;
+}
+
+.personalArea__guestBox {
+  background: linear-gradient(135deg, rgba(25, 46, 97, 0.88), rgba(17, 28, 61, 0.84));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 30px;
+  padding: 40px 32px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  margin-top: 24px;
+}
+
+.personalArea__guestTitle {
+  margin: 0 0 14px;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 900;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.personalArea__guestText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 28px;
+  line-height: 1.8;
+}
+
+.personalArea__guestActions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.personalArea__content {
+  margin-top: 0;
+}
+
+.personalArea__hero {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 22px;
+  align-items: stretch;
+}
+
+.personalArea__heroText,
+.personalArea__stats {
+  background: linear-gradient(135deg, rgba(25, 46, 97, 0.88), rgba(17, 28, 61, 0.84));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 30px;
+  padding: 32px 34px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+}
+
+.personalArea__title {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.personalArea__subtitle {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.96);
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.personalArea__stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  gap: 16px;
+}
+
+.personalArea__statCard {
+  min-height: 140px;
+  background: rgba(7, 24, 59, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.personalArea__statNumber {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.personalArea__statLabel {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.personalArea__message {
+  margin-top: 20px;
+  border-radius: 18px;
+  padding: 18px 22px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.personalArea__message--error {
+  background: rgba(180, 34, 34, 0.22);
+  border: 1px solid rgba(255, 180, 180, 0.28);
+}
+
+.personalArea__grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(340px, 1fr));
+  gap: 20px;
+}
+
+.personalArea__card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 28px;
+  padding: 24px;
+  box-sizing: border-box;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  min-height: 320px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+
+.personalArea__card--profile,
+.personalArea__card--notifications,
+.personalArea__card--recommendations,
+.personalArea__card--orders {
+  display: flex;
+  flex-direction: column;
+}
+
+.personalArea__sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.personalArea__sectionTitle {
+  margin: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.personalArea__linkBtn {
+  border: none;
+  background: transparent;
+  color: #9cc2ff;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0;
+}
+
+.personalArea__profileList {
+  display: grid;
+  gap: 16px;
+}
+
+.personalArea__profileItem {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 14px;
+  align-items: start;
+  min-height: 38px;
+  background: rgba(7, 24, 59, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-sizing: border-box;
+}
+
+.personalArea__profileLabel {
+  font-size: 23px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.personalArea__profileValue {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.7;
+  word-break: break-word;
+}
+
+.personalArea__notificationsList {
+  display: grid;
+  gap: 16px;
+}
+
+.personalArea__notificationItem {
+  background: rgba(7, 24, 59, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.personalArea__notificationTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.personalArea__notificationBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 92px;
+  height: 38px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: #3776f6;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.personalArea__notificationDate {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.personalArea__notificationTitle {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.personalArea__notificationText {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.personalArea__recommendationsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.personalArea__eventCard {
+  background: rgba(7, 24, 59, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 260px;
+  box-sizing: border-box;
+}
+
+.personalArea__eventCategory {
+  align-self: flex-start;
+  min-width: 90px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #3776f6;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.personalArea__eventTitle {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.personalArea__eventMeta {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 6px;
+}
+
+.personalArea__eventPrice {
+  margin-top: auto;
+  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.personalArea__ordersList--compact {
+  gap: 14px;
+}
+
+.personalArea__orderCompactItem {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(7, 24, 59, 0.28);
+  border-radius: 22px;
+  padding: 18px 20px;
+  display: grid;
+  grid-template-columns: minmax(220px, 1.8fr) minmax(260px, 2.4fr) 26px;
+  gap: 14px;
+  align-items: center;
+  text-align: right;
+  color: #ffffff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.personalArea__orderCompactMain {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.personalArea__orderCode {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 19px;
+  font-weight: 800;
+  word-break: break-word;
+}
+
+.personalArea__orderCompactMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.personalArea__orderCompactBadge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.personalArea__orderCompactArrow {
+  font-size: 26px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.personalArea__ordersList {
+  display: grid;
+  gap: 16px;
+}
+
+.personalArea__orderItem {
+  background: rgba(7, 24, 59, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.personalArea__orderTitle {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.personalArea__orderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 34px;
+  margin-bottom: 8px;
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.personalArea__orderRow strong {
+  font-size: 21px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.personalArea__orderStatus {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  min-height: 38px;
+  padding: 0 16px;
+  border-radius: 999px;
+  background: rgba(55, 118, 246, 0.22);
+  border: 1px solid rgba(106, 162, 255, 0.34);
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.personalArea__waitlistActions {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.personalArea__waitlistCancelBtn {
+  min-height: 46px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 14px;
+  background: #b91c1c;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.personalArea__waitlistCancelBtn:hover {
+  background: #991b1b;
+}
+
+.personalArea__waitlistCancelBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.personalArea__emptyState {
+  margin-top: auto;
+  background: rgba(7, 24, 59, 0.22);
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  padding: 26px 18px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+@media (max-width: 1180px) {
+  .personalArea__orderCompactItem {
+    grid-template-columns: 1fr;
+  }
+
+  .personalArea__orderCompactArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .personalArea__hero {
+    grid-template-columns: 1fr;
+  }
+
+  .personalArea__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 980px) {
+  .personalArea__container {
+    padding: 16px;
+  }
+
+  .personalArea__topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .personalArea__brand {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .personalArea__topActions {
+    justify-content: center;
+  }
+
+  .personalArea__topBtn {
+    width: 100%;
+    font-size: 19px;
+  }
+
+  .personalArea__title {
+    font-size: 40px;
+  }
+
+  .personalArea__subtitle {
+    font-size: 22px;
+  }
+
+  .personalArea__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .personalArea__sectionTitle {
+    font-size: 30px;
+  }
+
+  .personalArea__profileItem {
+    grid-template-columns: 1fr;
+  }
+
+  .personalArea__recommendationsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .personalArea__orderRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .personalArea__orderRow strong {
+    text-align: right;
+  }
+}
+
+@media (max-width: 640px) {
+  .personalArea__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .personalArea__title {
+    font-size: 34px;
+  }
+
+  .personalArea__subtitle,
+  .personalArea__guestText,
+  .personalArea__message,
+  .personalArea__emptyState,
+  .personalArea__eventMeta,
+  .personalArea__notificationText,
+  .personalArea__profileValue,
+  .personalArea__profileLabel,
+  .personalArea__orderRow,
+  .personalArea__orderRow strong {
+    font-size: 18px;
+  }
+
+  .personalArea__guestTitle {
+    font-size: 34px;
+  }
+
+  .personalArea__sectionTitle,
+  .personalArea__eventTitle,
+  .personalArea__orderTitle,
+  .personalArea__notificationTitle {
+    font-size: 24px;
+  }
+
+  .personalArea__linkBtn,
+  .personalArea__topBtn,
+  .personalArea__guestBtn,
+  .personalArea__eventBtn {
+    font-size: 18px;
+  }
+}
+.personalArea__waitlistActions {
+  margin-top: 14px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.personalArea__waitlistCancelBtn {
+  min-height: 46px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 14px;
+  background: #b91c1c;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.personalArea__waitlistCancelBtn:hover {
+  background: #991b1b;
+}
+
+.personalArea__waitlistCancelBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}

@@ -1,0 +1,273 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.grand-slam-page {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding-top: 96px;
+}
+
+.grand-slam-page__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.46)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.42));
+}
+
+.grand-slam-page__topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: 320px 1fr 220px;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 22px;
+  background: linear-gradient(90deg, rgba(7, 34, 86, 0.95), rgba(18, 72, 155, 0.95));
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+}
+
+.grand-slam-page__topTitle {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.grand-slam-page__topBtn {
+  height: 58px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0 18px;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.grand-slam-page__topBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.grand-slam-page__topBtn--primary {
+  background: #2c73ff;
+  border-color: #2c73ff;
+}
+
+.grand-slam-page__topBtn--primary:hover {
+  background: #1a61f5;
+}
+
+.grand-slam-page__content {
+  position: relative;
+  z-index: 2;
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 18px 18px 30px;
+  display: grid;
+  gap: 22px;
+}
+
+.grand-slam-page__hero {
+  display: flex;
+  justify-content: center;
+}
+
+.grand-slam-page__heroBox {
+  width: 100%;
+  max-width: 1280px;
+  padding: 24px 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.grand-slam-page__heroLogo {
+  width: 86px;
+  height: 86px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.grand-slam-page__heroTitle {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.grand-slam-page__heroText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 22px;
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+.grand-slam-page__cardsSection {
+  width: 100%;
+}
+
+.grand-slam-page__cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(290px, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.grand-slam-card {
+  display: grid;
+  gap: 14px;
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(9, 20, 46, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+  min-height: 100%;
+}
+
+.grand-slam-card__badge {
+  justify-self: start;
+  background: #2c73ff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.grand-slam-card__title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-align: center;
+  min-height: 78px;
+}
+
+.grand-slam-card__details {
+  display: grid;
+  gap: 10px;
+}
+
+.grand-slam-card__row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: start;
+}
+
+.grand-slam-card__label,
+.grand-slam-card__value {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.grand-slam-card__row--price .grand-slam-card__label,
+.grand-slam-card__row--price .grand-slam-card__price {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.grand-slam-card__price {
+  color: #ffffff;
+}
+
+.grand-slam-card__actionBtn {
+  margin-top: 8px;
+  height: 54px;
+  border: none;
+  border-radius: 14px;
+  background: #2c73ff;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.grand-slam-card__actionBtn:hover {
+  transform: translateY(-1px);
+  background: #1a61f5;
+}
+
+@media (max-width: 1200px) {
+  .grand-slam-page__cardsGrid {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+  }
+
+  .grand-slam-page__topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .grand-slam-page__topTitle {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .grand-slam-page {
+    padding-top: 158px;
+  }
+
+  .grand-slam-page__content {
+    padding: 14px 12px 22px;
+  }
+
+  .grand-slam-page__cardsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .grand-slam-page__topTitle {
+    font-size: 28px;
+  }
+
+  .grand-slam-page__topBtn {
+    width: 100%;
+    font-size: 19px;
+    height: 54px;
+  }
+
+  .grand-slam-page__heroTitle {
+    font-size: 28px;
+  }
+
+  .grand-slam-page__heroText {
+    font-size: 18px;
+  }
+
+  .grand-slam-card__title {
+    font-size: 24px;
+    min-height: auto;
+  }
+
+  .grand-slam-card__label,
+  .grand-slam-card__value,
+  .grand-slam-card__price {
+    font-size: 18px;
+  }
+}

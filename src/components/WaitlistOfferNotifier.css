@@ -1,0 +1,177 @@
+.waitlistNotifier {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 9999;
+  width: min(520px, calc(100vw - 32px));
+  background: linear-gradient(180deg, rgba(9, 18, 44, 0.96), rgba(16, 37, 87, 0.96));
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 24px;
+  box-shadow: 0 24px 44px rgba(0, 0, 0, 0.34);
+  padding: 22px 22px 20px;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.waitlistNotifier__close {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.waitlistNotifier__badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.18);
+  border: 1px solid rgba(134, 239, 172, 0.35);
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.waitlistNotifier__title {
+  margin: 0 0 10px;
+  font-size: 31px;
+  font-weight: 900;
+}
+
+.waitlistNotifier__text {
+  margin: 0 0 16px;
+  font-size: 21px;
+  line-height: 1.6;
+}
+
+.waitlistNotifier__row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.waitlistNotifier__label {
+  min-width: 116px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.waitlistNotifier__value {
+  flex: 1;
+  font-weight: 700;
+}
+
+.waitlistNotifier__timerBox {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.waitlistNotifier__timerLabel {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.84);
+  margin-bottom: 6px;
+}
+
+.waitlistNotifier__timerValue {
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.waitlistNotifier__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.waitlistNotifier__action {
+  min-height: 56px;
+  border-radius: 16px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.waitlistNotifier__action--primary {
+  flex: 1;
+  border: none;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.waitlistNotifier__action--secondary {
+  min-width: 130px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.10);
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  .waitlistNotifier {
+    top: 12px;
+    left: 12px;
+    width: calc(100vw - 24px);
+    padding: 18px 16px 16px;
+  }
+
+  .waitlistNotifier__title {
+    font-size: 25px;
+  }
+
+  .waitlistNotifier__text,
+  .waitlistNotifier__row,
+  .waitlistNotifier__action {
+    font-size: 18px;
+  }
+
+  .waitlistNotifier__timerValue {
+    font-size: 32px;
+  }
+}
+
+
+.waitlistNotifier--message {
+  background: linear-gradient(180deg, rgba(9, 18, 44, 0.96), rgba(23, 56, 122, 0.96));
+}
+
+.waitlistNotifier__action--danger {
+  min-width: 150px;
+  border: 1px solid rgba(255, 210, 210, 0.44);
+  background: rgba(220, 38, 38, 0.88);
+  color: #ffffff;
+}
+
+.waitlistNotifier__action:disabled {
+  opacity: 0.68;
+  cursor: not-allowed;
+}
+
+.waitlistNotifier__hint {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.10);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}

@@ -1,0 +1,556 @@
+.soldout-waitlist {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 18px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.soldout-waitlist__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.42);
+}
+
+.soldout-waitlist__card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 980px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 28px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.28);
+  padding: 34px 30px 28px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.soldout-waitlist__card--wide {
+  max-width: 1480px;
+}
+
+.soldout-waitlist__topActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+
+.soldout-waitlist__topBtn {
+  min-width: 220px;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 20px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111827;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.soldout-waitlist__topBtn:hover {
+  opacity: 0.96;
+}
+
+.soldout-waitlist__header {
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.soldout-waitlist__title {
+  margin: 0 0 12px;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.soldout-waitlist__subtitle {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.soldout-waitlist__eventBox {
+  background: rgba(17, 24, 39, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  padding: 24px 22px 16px;
+  margin-bottom: 24px;
+}
+
+.soldout-waitlist__eventTitle {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.soldout-waitlist__eventRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.soldout-waitlist__eventLabel {
+  font-weight: 900;
+}
+
+.soldout-waitlist__eventValue {
+  font-weight: 700;
+}
+
+.soldout-waitlist__termsBox,
+.soldout-waitlist__messageBox,
+.soldout-waitlist__noteBox,
+.soldout-waitlist__summaryBox,
+.soldout-waitlist__seatPicker {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.soldout-waitlist__termsTitle {
+  font-size: 34px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.soldout-waitlist__termsList {
+  margin: 0;
+  padding-right: 28px;
+  display: grid;
+  gap: 18px;
+}
+
+.soldout-waitlist__termItem {
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.9;
+}
+
+.soldout-waitlist__approveRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.soldout-waitlist__checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.soldout-waitlist__approveText {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.soldout-waitlist__message {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.soldout-waitlist__noteBox,
+.soldout-waitlist__summaryBox,
+.soldout-waitlist__seatPicker {
+  margin-top: 22px;
+}
+
+.soldout-waitlist__noteTitle,
+.soldout-waitlist__seatPickerTitle {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.soldout-waitlist__noteText,
+.soldout-waitlist__seatPickerText {
+  font-size: 24px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.soldout-waitlist__noteText--bold {
+  font-weight: 900;
+}
+
+.soldout-waitlist__form {
+  width: 100%;
+}
+
+.soldout-waitlist__formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.soldout-waitlist__field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.soldout-waitlist__field--full {
+  grid-column: 1 / -1;
+  margin-top: 22px;
+}
+
+.soldout-waitlist__fieldLabel {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.soldout-waitlist__fieldInput {
+  width: 100%;
+  min-height: 62px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.92);
+  color: #111827;
+  font-size: 22px;
+  font-weight: 700;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.soldout-waitlist__modeSwitcher {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 22px;
+}
+
+.soldout-waitlist__modeSwitcher--tight {
+  margin-top: 0;
+}
+
+.soldout-waitlist__modeBtn {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 17px 16px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.soldout-waitlist__modeBtn--active {
+  background: rgba(44, 115, 255, 0.92);
+  border-color: rgba(44, 115, 255, 1);
+}
+
+.soldout-waitlist__seatRows {
+  display: grid;
+  gap: 18px;
+}
+
+.soldout-waitlist__seatRow {
+  display: grid;
+  gap: 12px;
+}
+
+.soldout-waitlist__seatRowLabel {
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.soldout-waitlist__seatGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(90px, 1fr));
+  gap: 12px;
+}
+
+.soldout-waitlist__seatButton {
+  min-height: 56px;
+  border: none;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #111827;
+  font-size: 18px;
+  font-weight: 900;
+  cursor: pointer;
+  padding: 10px 8px;
+}
+
+.soldout-waitlist__seatButton--selected {
+  background: #2c73ff;
+  color: #ffffff;
+}
+
+.soldout-waitlist__formMessage,
+.soldout-waitlist__successMessage {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 18px;
+}
+
+.soldout-waitlist__formMessage {
+  color: #ffd7d7;
+}
+
+.soldout-waitlist__successMessage {
+  color: #d9ffe0;
+}
+
+.soldout-waitlist__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.soldout-waitlist__confirmBtn {
+  min-width: 300px;
+  border: none;
+  border-radius: 16px;
+  padding: 18px 28px;
+  background: #2c73ff;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.soldout-waitlist__confirmBtn:hover {
+  background: #1a61f5;
+}
+
+.soldout-waitlist__confirmBtn:disabled {
+  background: #8ca4d6;
+  cursor: not-allowed;
+}
+
+.soldout-waitlist__interactiveWrap {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.8fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.soldout-chip {
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.soldout-chip--blue {
+  background: rgba(44, 115, 255, 0.24);
+  border: 1px solid rgba(132, 176, 255, 0.22);
+}
+
+.soldout-statsGrid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.soldout-statLabel {
+  font-size: 20px;
+  font-weight: 900;
+  opacity: 0.9;
+}
+
+.soldout-statLabel--mb {
+  margin-bottom: 12px;
+}
+
+.soldout-statValue {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.soldout-progressTrack {
+  margin-top: 12px;
+  height: 12px;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.soldout-progressBar {
+  height: 100%;
+}
+
+.soldout-legend {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.soldout-legendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.soldout-legendDot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.soldout-legendDot--blue {
+  background: rgba(44, 115, 255, 0.95);
+}
+
+.soldout-legendDot--green {
+  background: rgba(46, 177, 94, 0.95);
+}
+
+.soldout-legendDot--gray {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.soldout-mapShell {
+  margin-top: 18px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(11, 27, 61, 0.35);
+}
+
+.soldout-sectionsSummary {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+}
+
+.soldout-sectionTitle {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.soldout-sectionText {
+  font-size: 18px;
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+.soldout-sideBigText {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.soldout-sideList {
+  display: grid;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.soldout-sideText {
+  font-size: 18px;
+  font-weight: 800;
+  opacity: 0.9;
+}
+
+.soldout-selectedList {
+  display: grid;
+  gap: 8px;
+}
+
+.soldout-selectedItem {
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: rgba(46, 177, 94, 0.18);
+  border: 1px solid rgba(46, 177, 94, 0.28);
+  font-size: 17px;
+  font-weight: 800;
+}
+
+@media (max-width: 1100px) {
+  .soldout-waitlist__interactiveWrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .soldout-waitlist__card,
+  .soldout-waitlist__card--wide {
+    padding: 26px 18px 22px;
+  }
+
+  .soldout-waitlist__topActions {
+    flex-direction: column;
+  }
+
+  .soldout-waitlist__modeSwitcher {
+    grid-template-columns: 1fr;
+  }
+
+  .soldout-waitlist__topBtn,
+  .soldout-waitlist__confirmBtn,
+  .soldout-waitlist__modeBtn {
+    width: 100%;
+  }
+
+  .soldout-waitlist__title {
+    font-size: 34px;
+  }
+
+  .soldout-waitlist__subtitle,
+  .soldout-waitlist__termItem,
+  .soldout-waitlist__message,
+  .soldout-waitlist__approveText,
+  .soldout-waitlist__noteText,
+  .soldout-waitlist__fieldLabel,
+  .soldout-waitlist__seatPickerText {
+    font-size: 18px;
+  }
+
+  .soldout-waitlist__termsTitle,
+  .soldout-waitlist__noteTitle,
+  .soldout-waitlist__seatPickerTitle {
+    font-size: 26px;
+  }
+
+  .soldout-waitlist__formGrid,
+  .soldout-waitlist__seatGrid,
+  .soldout-statsGrid,
+  .soldout-sectionsSummary {
+    grid-template-columns: 1fr;
+  }
+
+  .soldout-waitlist__field--full {
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,249 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.soldout-page {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding-top: 96px;
+}
+
+.soldout-page__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.45)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.42));
+}
+
+.soldout-page__topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: 230px 1fr 230px;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  background: linear-gradient(90deg, rgba(7, 34, 86, 0.95), rgba(18, 72, 155, 0.95));
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.20);
+}
+
+.soldout-page__title {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.soldout-page__topBtn {
+  min-height: 52px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0 16px;
+}
+
+.soldout-page__topBtn:hover {
+  background: rgba(255, 255, 255, 0.20);
+}
+
+.soldout-page__topBtn--primary {
+  background: #2c73ff;
+  border-color: #2c73ff;
+}
+
+.soldout-page__topBtn--primary:hover {
+  background: #1a61f5;
+}
+
+.soldout-page__content {
+  position: relative;
+  z-index: 2;
+  padding: 26px;
+  display: grid;
+  gap: 22px;
+}
+
+.soldout-page__hero {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 22px;
+  padding: 26px 22px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.soldout-page__heroTitle {
+  margin: 0;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+}
+
+.soldout-page__heroText {
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.8;
+}
+
+.soldout-page__userBox {
+  margin-top: 18px;
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: rgba(44, 115, 255, 0.95);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.soldout-page__grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.soldout-card {
+  display: grid;
+  gap: 14px;
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+
+.soldout-card__badge {
+  justify-self: start;
+  background: rgba(239, 68, 68, 0.95);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 8px 14px;
+  border-radius: 999px;
+}
+
+.soldout-card__teams {
+  margin: 0;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.5;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+}
+
+.soldout-card__row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+.soldout-card__label {
+  color: rgba(255, 255, 255, 0.90);
+  font-weight: 800;
+  font-size: 23px;
+  line-height: 1.6;
+}
+
+.soldout-card__value {
+  color: rgba(255, 255, 255, 0.98);
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.soldout-card__status {
+  color: #ffd1d1;
+  font-size: 22px;
+  font-weight: 900;
+  margin-top: 6px;
+}
+
+.soldout-card__btn {
+  margin-top: 10px;
+  min-height: 54px;
+  border: none;
+  border-radius: 14px;
+  background: #2c73ff;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.soldout-card__btn:hover {
+  background: #1a61f5;
+}
+
+@media (max-width: 900px) {
+  .soldout-page__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .soldout-page {
+    padding-top: 160px;
+  }
+
+  .soldout-page__topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .soldout-page__title {
+    order: -1;
+    font-size: 28px;
+  }
+
+  .soldout-page__heroTitle {
+    font-size: 28px;
+  }
+
+  .soldout-page__heroText {
+    font-size: 18px;
+  }
+
+  .soldout-card__teams {
+    font-size: 24px;
+  }
+
+  .soldout-card__label,
+  .soldout-card__value,
+  .soldout-card__status {
+    font-size: 19px;
+  }
+
+  .soldout-card__btn,
+  .soldout-page__topBtn {
+    font-size: 18px;
+  }
+}

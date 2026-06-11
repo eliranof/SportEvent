@@ -1,0 +1,261 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.world-cup-page {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding-top: 96px;
+}
+
+.world-cup-page__overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.46)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.42));
+}
+
+.world-cup-page__topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: 280px 1fr 320px;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 22px;
+  background: linear-gradient(90deg, rgba(7, 34, 86, 0.95), rgba(18, 72, 155, 0.95));
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.22);
+}
+
+.world-cup-page__topTitle {
+  margin: 0;
+  text-align: center;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.world-cup-page__topBtn {
+  height: 58px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0 18px;
+  transition: background 0.15s ease, transform 0.12s ease;
+}
+
+.world-cup-page__topBtn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.world-cup-page__topBtn--primary {
+  background: #2c73ff;
+  border-color: #2c73ff;
+}
+
+.world-cup-page__topBtn--primary:hover {
+  background: #1a61f5;
+}
+
+.world-cup-page__content {
+  position: relative;
+  z-index: 2;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 18px 18px 30px;
+  display: grid;
+  gap: 22px;
+}
+
+.world-cup-page__hero {
+  display: flex;
+  justify-content: center;
+}
+
+.world-cup-page__heroBox {
+  width: 100%;
+  max-width: 1250px;
+  padding: 24px 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.world-cup-page__heroTitle {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 900;
+}
+
+.world-cup-page__heroText {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 22px;
+  line-height: 1.8;
+  font-weight: 700;
+}
+
+.world-cup-page__matchesSection {
+  width: 100%;
+}
+
+.world-cup-page__matchesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 18px;
+  align-items: start;
+}
+
+.world-cup-card {
+  display: grid;
+  gap: 14px;
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(9, 20, 46, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
+  min-height: 100%;
+}
+
+.world-cup-card__badge {
+  justify-self: start;
+  background: #2c73ff;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 800;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.world-cup-card__match {
+  margin: 0;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-align: center;
+  min-height: 78px;
+}
+
+.world-cup-card__details {
+  display: grid;
+  gap: 10px;
+}
+
+.world-cup-card__row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px;
+  align-items: start;
+}
+
+.world-cup-card__label,
+.world-cup-card__value {
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.world-cup-card__row--price .world-cup-card__label,
+.world-cup-card__row--price .world-cup-card__value {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.world-cup-card__actionBtn {
+  margin-top: 8px;
+  height: 52px;
+  border: none;
+  border-radius: 14px;
+  background: #2c73ff;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.world-cup-card__actionBtn:hover {
+  transform: translateY(-1px);
+  background: #1a61f5;
+}
+
+@media (max-width: 1200px) {
+  .world-cup-page__matchesGrid {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+  }
+
+  .world-cup-page__topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .world-cup-page__topTitle {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .world-cup-page {
+    padding-top: 158px;
+  }
+
+  .world-cup-page__content {
+    padding: 14px 12px 22px;
+  }
+
+  .world-cup-page__matchesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .world-cup-page__topTitle {
+    font-size: 28px;
+  }
+
+  .world-cup-page__topBtn {
+    width: 100%;
+    font-size: 19px;
+    height: 54px;
+  }
+
+  .world-cup-page__heroTitle {
+    font-size: 28px;
+  }
+
+  .world-cup-page__heroText {
+    font-size: 18px;
+  }
+
+  .world-cup-card__match {
+    font-size: 24px;
+    min-height: auto;
+  }
+
+  .world-cup-card__label,
+  .world-cup-card__value {
+    font-size: 18px;
+  }
+}
