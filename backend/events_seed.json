@@ -1,0 +1,414 @@
+{
+  "nearEventsData": [
+    {
+      "id": 1,
+      "sectionTitle": "ליגת העל בכדורגל",
+      "category": "כדורגל",
+      "competition": "ליגת העל בכדורגל",
+      "homeTeam": "מכבי תל אביב",
+      "awayTeam": "הפועל באר שבע",
+      "teams": "מכבי תל אביב נגד הפועל באר שבע",
+      "homeLogoImage": "/logos/mta.png",
+      "awayLogoImage": "/logos/hbs.png",
+      "homeLogoText": "MTA",
+      "awayLogoText": "HBS",
+      "homeLogoBg": "#f6c343",
+      "awayLogoBg": "#d64545",
+      "homeLogoColor": "#1f1f1f",
+      "awayLogoColor": "#ffffff",
+      "location": "אצטדיון בלומפילד, תל אביב",
+      "dateTime": "05/06/2026 | 20:30",
+      "price": "60 ₪"
+    },
+    {
+      "id": 2,
+      "sectionTitle": "ליגת העל בכדורגל",
+      "category": "כדורגל",
+      "competition": "ליגת העל בכדורגל",
+      "homeTeam": "מכבי חיפה",
+      "awayTeam": "בית״ר ירושלים",
+      "teams": "מכבי חיפה נגד בית״ר ירושלים",
+      "homeLogoImage": "/logos/mhf.png",
+      "awayLogoImage": "/logos/bjr.png",
+      "homeLogoText": "MHF",
+      "awayLogoText": "BJR",
+      "homeLogoBg": "#1f9d55",
+      "awayLogoBg": "#f4c542",
+      "homeLogoColor": "#ffffff",
+      "awayLogoColor": "#1f1f1f",
+      "location": "אצטדיון סמי עופר, חיפה",
+      "dateTime": "08/06/2026 | 19:45",
+      "price": "75 ₪"
+    },
+    {
+      "id": 3,
+      "sectionTitle": "ליגת העל בכדורגל",
+      "category": "כדורגל",
+      "competition": "ליגת העל בכדורגל",
+      "homeTeam": "הפועל תל אביב",
+      "awayTeam": "מכבי נתניה",
+      "teams": "הפועל תל אביב נגד מכבי נתניה",
+      "homeLogoImage": "/logos/hta.png",
+      "awayLogoImage": "/logos/mne.png",
+      "homeLogoText": "HTA",
+      "awayLogoText": "MNE",
+      "homeLogoBg": "#c53030",
+      "awayLogoBg": "#f7c948",
+      "homeLogoColor": "#ffffff",
+      "awayLogoColor": "#1f1f1f",
+      "location": "אצטדיון בלומפילד, תל אביב",
+      "dateTime": "20/06/2026 | 21:00",
+      "price": "69 ₪"
+    },
+    {
+      "id": 4,
+      "sectionTitle": "ליגת האלופות",
+      "category": "כדורגל",
+      "competition": "ליגת האלופות",
+      "homeTeam": "ריאל מדריד",
+      "awayTeam": "מנצ'סטר סיטי",
+      "teams": "ריאל מדריד נגד מנצ'סטר סיטי",
+      "homeLogoImage": "/logos/rma.png",
+      "awayLogoImage": "/logos/mnc.png",
+      "homeLogoText": "RMA",
+      "awayLogoText": "MNC",
+      "homeLogoBg": "#f3f4f6",
+      "awayLogoBg": "#6cb4ee",
+      "homeLogoColor": "#1f2937",
+      "awayLogoColor": "#102a43",
+      "location": "סנטיאגו ברנבאו, מדריד",
+      "dateTime": "12/06/2026 | 22:00",
+      "price": "399 דולר"
+    },
+    {
+      "id": 5,
+      "sectionTitle": "ליגת האלופות",
+      "category": "כדורגל",
+      "competition": "ליגת האלופות",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "באיירן מינכן",
+      "teams": "ברצלונה נגד באיירן מינכן",
+      "homeLogoImage": "/logos/bar.png",
+      "awayLogoImage": "/logos/bym.png",
+      "homeLogoText": "BAR",
+      "awayLogoText": "BYM",
+      "homeLogoBg": "#8b1e3f",
+      "awayLogoBg": "#d62839",
+      "homeLogoColor": "#ffffff",
+      "awayLogoColor": "#ffffff",
+      "location": "ברצלונה, ספרד",
+      "dateTime": "19/06/2026 | 22:00",
+      "price": "429 דולר"
+    },
+    {
+      "id": 6,
+      "sectionTitle": "ליגת האלופות",
+      "category": "כדורגל",
+      "competition": "ליגת האלופות",
+      "homeTeam": "ליברפול",
+      "awayTeam": "פריז סן ז'רמן",
+      "teams": "ליברפול נגד פריז סן ז'רמן",
+      "homeLogoImage": "/logos/liv.png",
+      "awayLogoImage": "/logos/psg.png",
+      "homeLogoText": "LIV",
+      "awayLogoText": "PSG",
+      "homeLogoBg": "#b91c1c",
+      "awayLogoBg": "#1d4ed8",
+      "homeLogoColor": "#ffffff",
+      "awayLogoColor": "#ffffff",
+      "location": "אנפילד, ליברפול",
+      "dateTime": "23/06/2026 | 22:00",
+      "price": "459 דולר"
+    },
+    {
+      "id": 7,
+      "sectionTitle": "יורוליג",
+      "category": "כדורסל",
+      "competition": "יורוליג",
+      "homeTeam": "מכבי תל אביב",
+      "awayTeam": "אולימפיאקוס",
+      "teams": "מכבי תל אביב נגד אולימפיאקוס",
+      "homeLogoImage": "/logos/mtabas.png",
+      "awayLogoImage": "/logos/oly.png",
+      "homeLogoText": "MTA",
+      "awayLogoText": "OLY",
+      "homeLogoBg": "#f6c343",
+      "awayLogoBg": "#cf1124",
+      "homeLogoColor": "#1f1f1f",
+      "awayLogoColor": "#ffffff",
+      "location": "היכל מנורה מבטחים, תל אביב",
+      "dateTime": "17/06/2026 | 21:05",
+      "price": "89 ₪"
+    },
+    {
+      "id": 8,
+      "sectionTitle": "יורוליג",
+      "category": "כדורסל",
+      "competition": "יורוליג",
+      "homeTeam": "פנאתינאיקוס",
+      "awayTeam": "ריאל מדריד",
+      "teams": "פנאתינאיקוס נגד ריאל מדריד",
+      "homeLogoImage": "/logos/pna.png",
+      "awayLogoImage": "/logos/rmabas.png",
+      "homeLogoText": "PNA",
+      "awayLogoText": "RMA",
+      "homeLogoBg": "#15803d",
+      "awayLogoBg": "#f3f4f6",
+      "homeLogoColor": "#ffffff",
+      "awayLogoColor": "#1f2937",
+      "location": "אתונה, יוון",
+      "dateTime": "21/06/2026 | 21:30",
+      "price": "399 דולר"
+    },
+    {
+      "id": 9,
+      "sectionTitle": "יורוליג",
+      "category": "כדורסל",
+      "competition": "יורוליג",
+      "homeTeam": "ברצלונה",
+      "awayTeam": "פנרבחצ'ה",
+      "teams": "ברצלונה נגד פנרבחצ'ה",
+      "homeLogoImage": "/logos/barbas.png",
+      "awayLogoImage": "/logos/fnr.png",
+      "homeLogoText": "BAR",
+      "awayLogoText": "FNR",
+      "homeLogoBg": "#8b1e3f",
+      "awayLogoBg": "#eab308",
+      "homeLogoColor": "#ffffff",
+      "awayLogoColor": "#1f1f1f",
+      "location": "ברצלונה, ספרד",
+      "dateTime": "26/06/2026 | 21:45",
+      "price": "419 דולר"
+    },
+    {
+      "id": 10,
+      "sectionTitle": "טניס בינלאומי",
+      "category": "טניס",
+      "competition": "טניס בינלאומי",
+      "homeTeam": "יאניק סינר",
+      "awayTeam": "קרלוס אלקראס",
+      "teams": "יאניק סינר נגד קרלוס אלקראס",
+      "homeLogoText": "SIN",
+      "awayLogoText": "ALC",
+      "homeLogoBg": "#2563eb",
+      "awayLogoBg": "#f97316",
+      "homeLogoColor": "#ffffff",
+      "awayLogoColor": "#ffffff",
+      "location": "רומא, איטליה",
+      "dateTime": "30/06/2026 | 18:30",
+      "price": "399 דולר"
+    },
+    {
+      "id": 11,
+      "sectionTitle": "טניס בינלאומי",
+      "category": "טניס",
+      "competition": "טניס בינלאומי",
+      "homeTeam": "נובאק ג'וקוביץ'",
+      "awayTeam": "אלכסנדר זברב",
+      "teams": "נובאק ג'וקוביץ' נגד אלכסנדר זברב",
+      "homeLogoText": "DJO",
+      "awayLogoText": "ZVE",
+      "homeLogoBg": "#0f766e",
+      "awayLogoBg": "#7c3aed",
+      "homeLogoColor": "#ffffff",
+      "awayLogoColor": "#ffffff",
+      "location": "פריז, צרפת",
+      "dateTime": "03/06/2026 | 19:00",
+      "price": "419 דולר"
+    },
+    {
+      "id": 12,
+      "sectionTitle": "טניס בינלאומי",
+      "category": "טניס",
+      "competition": "טניס בינלאומי",
+      "homeTeam": "איגה שוויונטק",
+      "awayTeam": "קוקו גוף",
+      "teams": "איגה שוויונטק נגד קוקו גוף",
+      "homeLogoText": "IGA",
+      "awayLogoText": "GAU",
+      "homeLogoBg": "#db2777",
+      "awayLogoBg": "#2563eb",
+      "homeLogoColor": "#ffffff",
+      "awayLogoColor": "#ffffff",
+      "location": "מדריד, ספרד",
+      "dateTime": "07/06/2026 | 18:00",
+      "price": "399 דולר"
+    }
+  ],
+  "soldOutEventsData": [
+    {
+      "id": "so-1",
+      "category": "כדורגל",
+      "competition": "לה ליגה",
+      "teams": "ברצלונה נגד ריאל מדריד",
+      "location": "ברצלונה",
+      "dateTime": "03/06/2026 | 22:00"
+    },
+    {
+      "id": "so-2",
+      "category": "כדורסל",
+      "competition": "יורוליג",
+      "teams": "מכבי תל אביב נגד פנאתינאיקוס",
+      "location": "תל אביב",
+      "dateTime": "10/06/2026 | 21:15"
+    },
+    {
+      "id": "so-3",
+      "category": "טניס",
+      "competition": "גביע דיוויס",
+      "teams": "גביע דיוויס תל אביב 2026",
+      "location": "תל אביב",
+      "dateTime": "28/06/2026 | 19:30"
+    }
+  ],
+  "israelSectionsData": [
+    {
+      "title": "משחקים בישראל",
+      "items": [
+        {
+          "id": "isr-1",
+          "tag": "כדורגל",
+          "category": "כדורגל",
+          "competition": "ליגת העל בכדורגל",
+          "teams": "מכבי חיפה נגד בית״ר ירושלים",
+          "location": "אצטדיון סמי עופר, חיפה",
+          "dateTime": "08/06/2026 | 19:45"
+        },
+        {
+          "id": "isr-2",
+          "tag": "כדורסל",
+          "category": "כדורסל",
+          "competition": "יורוליג",
+          "teams": "מכבי תל אביב נגד אולימפיאקוס",
+          "location": "היכל מנורה מבטחים, תל אביב",
+          "dateTime": "17/06/2026 | 21:05"
+        }
+      ]
+    }
+  ],
+  "worldSectionsData": [
+    {
+      "title": "משחקים בחו״ל",
+      "items": [
+        {
+          "id": "world-1",
+          "tag": "כדורגל",
+          "category": "כדורגל",
+          "competition": "ליגת האלופות",
+          "teams": "ריאל מדריד נגד מנצ'סטר סיטי",
+          "location": "מדריד, ספרד",
+          "dateTime": "15/06/2026 | 22:00"
+        },
+        {
+          "id": "world-2",
+          "tag": "טניס",
+          "category": "טניס",
+          "competition": "טניס בינלאומי",
+          "teams": "יאניק סינר נגד קרלוס אלקראס",
+          "location": "רומא, איטליה",
+          "dateTime": "30/06/2026 | 18:30"
+        }
+      ]
+    }
+  ],
+  "featuredEventsData": [
+    {
+      "id": "must-1",
+      "badge": "מונדיאל 2026",
+      "category": "כדורגל",
+      "competition": "מונדיאל 2026",
+      "title": "משחקי מונדיאל 2026 בארצות הברית, קנדה ומקסיקו",
+      "location": "ארצות הברית | קנדה | מקסיקו",
+      "dateTime": "2026 | מועדים יעודכנו בהמשך"
+    },
+    {
+      "id": "must-2",
+      "badge": "גרנד סלאם טניס",
+      "category": "טניס",
+      "competition": "גרנד סלאם",
+      "title": "אירוע גרנד סלאם טניס",
+      "location": "תל אביב",
+      "dateTime": "תאריך יעודכן בהמשך | שעה תעודכן בהמשך"
+    },
+    {
+      "id": "must-3",
+      "badge": "פיינל פור יורוליג 2026",
+      "category": "כדורסל",
+      "competition": "פיינל פור יורוליג",
+      "title": "פיינל פור יורוליג 2026",
+      "location": "אבו דאבי",
+      "dateTime": "2026 | פרטים מלאים בהמשך"
+    }
+  ],
+  "tennisMustSeeEventData": {
+    "id": "must-tennis-1",
+    "category": "טניס",
+    "competition": "גביע דיוויס",
+    "teams": "גביע דיוויס תל אביב 2026",
+    "location": "תל אביב",
+    "dateTime": "28/06/2026 | 19:30",
+    "price": "420 ₪"
+  },
+  "finalFourMatchesData": [
+    {
+      "id": "ff-1",
+      "category": "כדורסל",
+      "competition": "פיינל פור יורוליג",
+      "round": "משחק פיינל פור 1",
+      "teams": "ריאל מדריד נגד אולימפיאקוס",
+      "location": "אבו דאבי",
+      "dateTime": "22/05/2026 | 18:00",
+      "price": "1,350 ₪"
+    },
+    {
+      "id": "ff-2",
+      "category": "כדורסל",
+      "competition": "פיינל פור יורוליג",
+      "round": "משחק פיינל פור 2",
+      "teams": "פנאתינאיקוס נגד מונאקו",
+      "location": "אבו דאבי",
+      "dateTime": "22/05/2026 | 21:00",
+      "price": "1,390 ₪"
+    },
+    {
+      "id": "ff-3",
+      "category": "כדורסל",
+      "competition": "פיינל פור יורוליג",
+      "round": "המשחק על המקום השלישי",
+      "teams": "המפסידה מחצי גמר 1 נגד המפסידה מחצי גמר 2",
+      "location": "אבו דאבי",
+      "dateTime": "24/05/2026 | 18:00",
+      "price": "1,150 ₪"
+    },
+    {
+      "id": "ff-4",
+      "category": "כדורסל",
+      "competition": "פיינל פור יורוליג",
+      "round": "משחק הגמר",
+      "teams": "המנצחת מחצי גמר 1 נגד המנצחת מחצי גמר 2",
+      "location": "אבו דאבי",
+      "dateTime": "24/05/2026 | 21:00",
+      "price": "1,890 ₪"
+    }
+  ],
+  "worldCupMatchesData": [
+    {
+      "id": "wc26-g1",
+      "category": "כדורגל",
+      "competition": "מונדיאל 2026",
+      "teams": "מקסיקו נגד יפן",
+      "location": "מקסיקו סיטי",
+      "dateTime": "11/06/2026 | 21:00",
+      "price": "1,990 ₪"
+    },
+    {
+      "id": "wc26-g2",
+      "category": "כדורגל",
+      "competition": "מונדיאל 2026",
+      "teams": "אנגליה נגד ארצות הברית",
+      "location": "ניו יורק",
+      "dateTime": "12/06/2026 | 20:30",
+      "price": "2,150 ₪"
+    }
+  ]
+}
